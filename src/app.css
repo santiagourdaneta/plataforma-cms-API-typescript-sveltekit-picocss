@@ -1,0 +1,68 @@
+/* src/app.css */
+
+/* 1. Importación del Framework CSS (Pico.css) */
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css");
+
+
+/* 2. Estilos Globales Adicionales */
+
+/* src/app.css */
+
+:root {
+    /* --- FONDO Y TEXTO BASE (Asegurando Contraste Alto) --- */
+    
+    /* Fondo principal: Si es light mode, debe ser muy claro (o blanco) */
+    --pico-background-color: #ffffff; 
+    
+    /* Texto principal: Debe ser muy oscuro para alto contraste sobre fondo blanco */
+    --pico-color-text: #1a1a1a; 
+    
+    /* Texto secundario (para footers, descripciones pequeñas): Todavía oscuro, pero ligeramente más claro que el texto base */
+    --pico-color-gray-700: #555555; 
+    
+    /* --- COLORES DE ENLACES Y ELEMENTOS CLICABLES --- */
+    
+    /* Enlaces estándar (Anchor tags <a>): Debe tener contraste contra el fondo */
+    --pico-color-link: var(--pico-color-primary-600); 
+
+    /* Color primario (botones, active states, etc.) */
+    --pico-color-primary-hue: 210; 
+    --pico-color-primary-saturation: 80%;
+    
+    /* --- CORRECCIÓN DE COLORES ESPECÍFICOS --- */
+
+    /* Tarjetas y Contenedores: Asegura que el fondo del contenido sea claro */
+    --pico-card-background-color: #fcfcfc;
+    
+    /* Texto en botones primarios: Debe ser blanco para contraste */
+    --pico-color-white: #ffffff;
+}
+
+/* --- CLASE DE DESCRIPCIÓN --- */
+/* Asegúrate de que las descripciones en tus tarjetas sean oscuras */
+.description {
+    color: var(--pico-color-gray-700); /* Usamos el gris oscuro definido arriba */
+}
+
+/* --- TEXTO DE LA PAGINACIÓN --- */
+/* El texto dentro de los botones de paginación también debe ser oscuro */
+.pagination-container button {
+    color: var(--pico-color-primary-600); /* O el color primario oscuro */
+}
+
+/* Configuración de la fuente para más ligereza y modernidad */
+body {
+    font-family: 'Inter', sans-serif; /* Usamos una fuente moderna y legible */
+}
+
+/* Estilos de la cabecera (Header/Footer Globales) */
+header {
+    /* Estilos futuros para el Header global */
+}
+
+/* Evitar transiciones de hover pesadas, usando solo opacidad */
+a:hover, button:hover {
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0.85;
+}
+

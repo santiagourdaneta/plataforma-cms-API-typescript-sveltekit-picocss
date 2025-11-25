@@ -1,0 +1,229 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "🎬 Admin Panel" [ref=e8] [cursor=pointer]:
+            - /url: /admin/dashboard
+            - strong [ref=e9]: 🎬 Admin Panel
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - link "Videos" [ref=e12] [cursor=pointer]:
+            - /url: /admin/videos
+        - listitem [ref=e13]:
+          - link "Categorías" [ref=e14] [cursor=pointer]:
+            - /url: /admin/categorias
+        - listitem [ref=e15]: Hola, superadmin
+        - listitem [ref=e16]:
+          - button "Cerrar Sesión" [ref=e17] [cursor=pointer]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - heading "Gestión de Catálogo de Videos" [level=2] [ref=e20]
+      - generic [ref=e21]:
+        - searchbox "Buscar título/descripción (mín. 3 letras)..." [ref=e22]
+        - combobox [ref=e23]:
+          - option "-- Filtrar por Categoría --" [selected]
+          - 'option "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp"'
+          - 'option "<script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */"'
+          - option "Acción88"
+          - option "Ciencia Ficción10"
+          - option "Comedia5"
+          - option "qwe"
+        - button "Registrar Video" [ref=e24] [cursor=pointer]
+      - table [ref=e25]:
+        - rowgroup [ref=e26]:
+          - row "ID Título Categoría Estado Acciones" [ref=e27]:
+            - cell "ID" [ref=e28]
+            - cell "Título" [ref=e29]
+            - cell "Categoría" [ref=e30]
+            - cell "Estado" [ref=e31]
+            - cell "Acciones" [ref=e32]
+        - rowgroup [ref=e33]:
+          - 'row "20 Test Video 1764085674070 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Activo Editar Desactivar" [ref=e34]':
+            - cell "20" [ref=e35]
+            - cell "Test Video 1764085674070" [ref=e36]:
+              - link "Test Video 1764085674070" [ref=e37] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e38]'
+            - cell "Activo" [ref=e39]
+            - cell "Editar Desactivar" [ref=e40]:
+              - button "Editar" [ref=e41] [cursor=pointer]
+              - button "Desactivar" [ref=e42] [cursor=pointer]
+          - 'row "19 Test Video 1764084664902 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Inactivo Editar Reactivar" [ref=e43]':
+            - cell "19" [ref=e44]
+            - cell "Test Video 1764084664902" [ref=e45]:
+              - link "Test Video 1764084664902" [ref=e46] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e47]'
+            - cell "Inactivo" [ref=e48]
+            - cell "Editar Reactivar" [ref=e49]:
+              - button "Editar" [disabled]
+              - button "Reactivar" [ref=e50] [cursor=pointer]
+          - 'row "18 Test Video 1764084264642 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Inactivo Editar Reactivar" [ref=e51]':
+            - cell "18" [ref=e52]
+            - cell "Test Video 1764084264642" [ref=e53]:
+              - link "Test Video 1764084264642" [ref=e54] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e55]'
+            - cell "Inactivo" [ref=e56]
+            - cell "Editar Reactivar" [ref=e57]:
+              - button "Editar" [disabled]
+              - button "Reactivar" [ref=e58] [cursor=pointer]
+          - 'row "17 Test Video 1764081547682 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Inactivo Editar Reactivar" [ref=e59]':
+            - cell "17" [ref=e60]
+            - cell "Test Video 1764081547682" [ref=e61]:
+              - link "Test Video 1764081547682" [ref=e62] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e63]'
+            - cell "Inactivo" [ref=e64]
+            - cell "Editar Reactivar" [ref=e65]:
+              - button "Editar" [disabled]
+              - button "Reactivar" [ref=e66] [cursor=pointer]
+          - 'row "16 Video de Prueba para Edición E2E 1764081456964 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Inactivo Editar Reactivar" [ref=e67]':
+            - cell "16" [ref=e68]
+            - cell "Video de Prueba para Edición E2E 1764081456964" [ref=e69]:
+              - link "Video de Prueba para Edición E2E 1764081456964" [ref=e70] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e71]'
+            - cell "Inactivo" [ref=e72]
+            - cell "Editar Reactivar" [ref=e73]:
+              - button "Editar" [disabled]
+              - button "Reactivar" [ref=e74] [cursor=pointer]
+          - 'row "15 Video de Prueba para Edición E2E 1764078693030 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Activo Editar Desactivar" [ref=e75]':
+            - cell "15" [ref=e76]
+            - cell "Video de Prueba para Edición E2E 1764078693030" [ref=e77]:
+              - link "Video de Prueba para Edición E2E 1764078693030" [ref=e78] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e79]'
+            - cell "Activo" [ref=e80]
+            - cell "Editar Desactivar" [ref=e81]:
+              - button "Editar" [ref=e82] [cursor=pointer]
+              - button "Desactivar" [ref=e83] [cursor=pointer]
+          - 'row "14 Video de Prueba para Edición E2E 1764078029050 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Activo Editar Desactivar" [ref=e84]':
+            - cell "14" [ref=e85]
+            - cell "Video de Prueba para Edición E2E 1764078029050" [ref=e86]:
+              - link "Video de Prueba para Edición E2E 1764078029050" [ref=e87] [cursor=pointer]:
+                - /url: UCw0aKHSGFG
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e88]'
+            - cell "Activo" [ref=e89]
+            - cell "Editar Desactivar" [ref=e90]:
+              - button "Editar" [ref=e91] [cursor=pointer]
+              - button "Desactivar" [ref=e92] [cursor=pointer]
+          - 'row "13 Test Video 1764049689166 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Activo Editar Desactivar" [ref=e93]':
+            - cell "13" [ref=e94]
+            - cell "Test Video 1764049689166" [ref=e95]:
+              - link "Test Video 1764049689166" [ref=e96] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e97]'
+            - cell "Activo" [ref=e98]
+            - cell "Editar Desactivar" [ref=e99]:
+              - button "Editar" [ref=e100] [cursor=pointer]
+              - button "Desactivar" [ref=e101] [cursor=pointer]
+          - 'row "12 Test Video 1764049304318 // src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp Activo Editar Desactivar" [ref=e102]':
+            - cell "12" [ref=e103]
+            - cell "Test Video 1764049304318" [ref=e104]:
+              - link "Test Video 1764049304318" [ref=e105] [cursor=pointer]:
+                - /url: TESTID12345
+            - 'cell "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [ref=e106]'
+            - cell "Activo" [ref=e107]
+            - cell "Editar Desactivar" [ref=e108]:
+              - button "Editar" [ref=e109] [cursor=pointer]
+              - button "Desactivar" [ref=e110] [cursor=pointer]
+          - 'row "11 import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */ <script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */ Activo Editar Desactivar" [ref=e111]':
+            - cell "11" [ref=e112]
+            - 'cell "import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */" [ref=e113]':
+              - 'link "import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */" [ref=e114] [cursor=pointer]':
+                - /url: descripcion
+            - 'cell "<script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */" [ref=e115]'
+            - cell "Activo" [ref=e116]
+            - cell "Editar Desactivar" [ref=e117]:
+              - button "Editar" [ref=e118] [cursor=pointer]
+              - button "Desactivar" [ref=e119] [cursor=pointer]
+          - 'row "9 <script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */ Acción88 Activo Editar Desactivar" [ref=e120]':
+            - cell "9" [ref=e121]
+            - 'cell "<script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */" [ref=e122]':
+              - 'link "<script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */" [ref=e123] [cursor=pointer]':
+                - /url: nLKA39w9g9w
+            - cell "Acción88" [ref=e124]
+            - cell "Activo" [ref=e125]
+            - cell "Editar Desactivar" [ref=e126]:
+              - button "Editar" [ref=e127] [cursor=pointer]
+              - button "Desactivar" [ref=e128] [cursor=pointer]
+          - row "6 mata de mango Ciencia Ficción10 Activo Editar Desactivar" [ref=e129]:
+            - cell "6" [ref=e130]
+            - cell "mata de mango" [ref=e131]:
+              - link "mata de mango" [ref=e132] [cursor=pointer]:
+                - /url: nLKA39w9g9w
+            - cell "Ciencia Ficción10" [ref=e133]
+            - cell "Activo" [ref=e134]
+            - cell "Editar Desactivar" [ref=e135]:
+              - button "Editar" [ref=e136] [cursor=pointer]
+              - button "Desactivar" [ref=e137] [cursor=pointer]
+          - row "5 gato loco qwe Activo Editar Desactivar" [ref=e138]:
+            - cell "5" [ref=e139]
+            - cell "gato loco" [ref=e140]:
+              - link "gato loco" [ref=e141] [cursor=pointer]:
+                - /url: nLKA39w9g9w
+            - cell "qwe" [ref=e142]
+            - cell "Activo" [ref=e143]
+            - cell "Editar Desactivar" [ref=e144]:
+              - button "Editar" [ref=e145] [cursor=pointer]
+              - button "Desactivar" [ref=e146] [cursor=pointer]
+          - row "4 Estudiar Desarrollo de Software en Perú Ciencia Ficción10 Activo Editar Desactivar" [ref=e147]:
+            - cell "4" [ref=e148]
+            - cell "Estudiar Desarrollo de Software en Perú" [ref=e149]:
+              - link "Estudiar Desarrollo de Software en Perú" [ref=e150] [cursor=pointer]:
+                - /url: nLKA39w9g9w
+            - cell "Ciencia Ficción10" [ref=e151]
+            - cell "Activo" [ref=e152]
+            - cell "Editar Desactivar" [ref=e153]:
+              - button "Editar" [ref=e154] [cursor=pointer]
+              - button "Desactivar" [ref=e155] [cursor=pointer]
+          - row "3 4 Institutos para Estudiar Desarrollo de Software en Perú Acción88 Activo Editar Desactivar" [ref=e156]:
+            - cell "3" [ref=e157]
+            - cell "4 Institutos para Estudiar Desarrollo de Software en Perú" [ref=e158]:
+              - link "4 Institutos para Estudiar Desarrollo de Software en Perú" [ref=e159] [cursor=pointer]:
+                - /url: nLKA39w9g9w
+            - cell "Acción88" [ref=e160]
+            - cell "Activo" [ref=e161]
+            - cell "Editar Desactivar" [ref=e162]:
+              - button "Editar" [ref=e163] [cursor=pointer]
+              - button "Desactivar" [ref=e164] [cursor=pointer]
+      - navigation [ref=e165]:
+        - list [ref=e166]:
+          - listitem [ref=e167]:
+            - button "Anterior" [disabled]
+          - listitem [ref=e168]: Página 1 de 1
+          - listitem [ref=e169]:
+            - button "Siguiente" [disabled]
+    - dialog [ref=e170]:
+      - article [ref=e171]:
+        - generic [ref=e172]:
+          - link "Cerrar" [ref=e173] [cursor=pointer]:
+            - /url: "#close"
+          - 'heading "Editar Video ID: 20" [level=3] [ref=e174]'
+        - generic [ref=e175]:
+          - generic [ref=e176]: Título
+          - textbox "Título" [ref=e177]: Video Editado por E2E 1764086267770
+          - generic [ref=e178]: Descripción
+          - textbox "Descripción" [ref=e179]: Descripción actualizada en la prueba E2E.
+          - generic [ref=e180]: Categoría
+          - combobox "Categoría" [ref=e181]:
+            - option "--- Seleccionar Categoría ---" [disabled]
+            - 'option "// src/routes/admin/categorias/+page.server.js /** @type {import(''./$types'').PageServerLoad} */ exp" [selected]'
+            - 'option "<script> import { goto } from ''$app/navigation''; /** @type {import(''./$types'').PageData} */"'
+            - option "Acción88"
+            - option "Ciencia Ficción10"
+            - option "Comedia5"
+            - option "qwe"
+          - generic [ref=e182]: ID de Video de YouTube
+          - textbox "ID de Video de YouTube" [ref=e183]: TESTID12345
+          - generic [ref=e184]:
+            - button "Cancelar" [disabled]
+            - button "Guardando..." [active]
+  - contentinfo [ref=e185]:
+    - generic [ref=e186]: Plataforma Video Web © 2025
+```
